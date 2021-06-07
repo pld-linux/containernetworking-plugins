@@ -9,8 +9,11 @@ Source0:	https://github.com/containernetworking/plugins/archive/v%{version}/%{na
 # Source0-md5:	d28bcf99557ac61a55445a0e5a44f5b1
 URL:		https://github.com/containernetworking/plugins/
 BuildRequires:	golang
+BuildRequires:	rpmbuild(macros) >= 2.005
 ExclusiveArch:	%{ix86} %{x8664} %{arm} aarch64 mips64 mips64le ppc64 ppc64le s390x
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_debugsource_packages	0
 
 %description
 The CNI (Container Network Interface) project consists of a
