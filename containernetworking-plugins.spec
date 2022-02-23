@@ -1,12 +1,12 @@
 Summary:	CNI network plugins
 Name:		containernetworking-plugins
-Version:	1.0.1
+Version:	1.1.0
 Release:	1
 License:	Apache v2.0
 Group:		Applications/System
 #Source0Download: https://github.com/containers/podman/releases
 Source0:	https://github.com/containernetworking/plugins/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	2ca096c69f14265b37a2cbc56077a949
+# Source0-md5:	f882cd2b7dd2c595f8b1f61450cd618b
 URL:		https://github.com/containernetworking/plugins/
 BuildRequires:	golang
 BuildRequires:	rpmbuild(macros) >= 2.005
