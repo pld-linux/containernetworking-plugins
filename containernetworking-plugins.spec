@@ -9,8 +9,8 @@ Source0:	https://github.com/containernetworking/plugins/archive/v%{version}/%{na
 # Source0-md5:	c37fed40151ddf0a00ef265c9dd91742
 URL:		https://github.com/containernetworking/plugins/
 BuildRequires:	golang
-BuildRequires:	rpmbuild(macros) >= 2.005
-ExclusiveArch:	%{ix86} %{x8664} %{arm} aarch64 mips64 mips64le ppc64 ppc64le s390x
+BuildRequires:	rpmbuild(macros) >= 2.009
+ExclusiveArch:	%go_arches
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_debugsource_packages	0
