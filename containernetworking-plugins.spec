@@ -8,6 +8,7 @@ Group:		Applications/System
 Source0:	https://github.com/containernetworking/plugins/archive/v%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	c37fed40151ddf0a00ef265c9dd91742
 URL:		https://github.com/containernetworking/plugins/
+BuildRequires:	bash
 BuildRequires:	golang
 BuildRequires:	rpmbuild(macros) >= 2.009
 ExclusiveArch:	%go_arches
@@ -27,7 +28,7 @@ deleted.
 %setup -q -n plugins-%{version}
 
 %build
-./build_linux.sh
+%{__bash} ./build_linux.sh
 
 %install
 rm -rf $RPM_BUILD_ROOT
