@@ -28,7 +28,7 @@ deleted.
 %setup -q -n plugins-%{version}
 
 %build
-%{__bash} ./build_linux.sh
+GO="eval %__go" %{__bash} ./build_linux.sh
 
 %install
 rm -rf $RPM_BUILD_ROOT
