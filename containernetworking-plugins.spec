@@ -14,7 +14,7 @@ BuildRequires:	rpmbuild(macros) >= 2.009
 ExclusiveArch:	%go_arches
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_debugsource_packages	0
+%undefine	_debugsource_packages
 
 %description
 The CNI (Container Network Interface) project consists of a
